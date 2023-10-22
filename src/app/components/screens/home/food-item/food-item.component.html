@@ -1,0 +1,32 @@
+
+<div class="card-item">
+  <img class="image" src="{{hit?.recipe?.images?.REGULAR?.url}}"  alt="food">
+  <div class="px-6 py-4">
+    <div class="font-bold text-base mb-2">{{hit?.recipe?.label}}</div>
+    <div class="price-item">
+      <span *ngIf="hit?.recipe?.sales" class="price-with-sales">${{(hit?.recipe?.price??0)/2}}</span>
+      <div [class]="hit?.recipe?.sales ? 'sales' : 'price'">
+        ${{hit?.recipe?.price}}
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+<div class="food-type-line">
+  <div  *ngFor="let type of hit?.recipe?.cuisineType">
+    <span class="food-type-item">{{type}}</span>
+  </div>
+  <div  *ngFor="let type of hit?.recipe?.mealType">
+    <span class="food-type-item">{{type}}</span>
+  </div>
+  <div  *ngFor="let type of hit?.recipe?.dishType">
+    <span class="food-type-item">{{type}}</span>
+  </div>
+</div>
+
+<!--
+cuisineType:       string[];
+mealType:          string[];
+dishType:          string[];-->

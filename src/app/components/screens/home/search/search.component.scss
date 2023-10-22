@@ -1,0 +1,10 @@
+.search-button{
+  @apply flex items-center justify-center bg-amber-400 hover:bg-amber-500 focus:outline-none font-bold py-2 px-4 rounded;
+  .search-icon{
+    @apply text-blue-50;
+  }
+}
+
+.input-search{
+  @apply border border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-300;
+}

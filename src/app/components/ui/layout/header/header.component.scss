@@ -1,0 +1,26 @@
+.nav {
+  @apply bg-white p-5 mt-3;
+  ul {
+    @apply flex items-center justify-between col-auto;
+    li {
+      a {
+        @apply relative ;
+        .mat-icon{
+          @apply text-5xl h-12 w-12;
+
+        }
+        &:hover{
+          @apply text-orange-400;
+        }
+
+        &:after{
+          @apply content-[""] bg-orange-400 absolute h-1 w-full bottom-0 left-0 rounded-xl duration-300 ease-in-out transform scale-0
+        }
+
+        &:hover::after {
+          @apply transform scale-100
+        }
+      }
+    }
+  }
+}

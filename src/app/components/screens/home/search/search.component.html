@@ -1,0 +1,20 @@
+<div class="mb-3 mt-3">
+  <div class=" flex w-full items-center">
+    <input
+      type="search"
+      class="input-search"
+      placeholder="Search"
+      aria-label="Search"
+      [(ngModel)]="enteredSearchValue"
+      (ngModelChange)="handleSearch()"
+      />
+
+    <!--Search button-->
+    <button
+      class="search-button"
+      type="button"
+      (click)="handleSearch()">
+      <mat-icon class="search-icon">{{"searchIcon"}}</mat-icon>
+    </button>
+  </div>
+</div>

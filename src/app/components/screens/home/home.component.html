@@ -1,0 +1,5 @@
+<div>
+  <app-search (searchValue)="onSearchFoodEmitter($event)"> </app-search>
+  <app-categories (activeCategoryChange)="onChangeCategory($event)"></app-categories>
+  <app-food-list  [searchTerm]="searchValue" [activeCategory]="activeCategory" ></app-food-list>
+</div>
