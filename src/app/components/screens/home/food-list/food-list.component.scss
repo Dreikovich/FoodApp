@@ -1,0 +1,7 @@
+.list-cards{
+  @apply flex flex-wrap justify-between gap-5 mt-10;
+  .card{
+    @apply rounded overflow-hidden shadow-lg max-w-[48%]  ;
+
+  }
+}

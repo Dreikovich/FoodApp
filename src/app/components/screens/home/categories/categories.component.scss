@@ -1,0 +1,16 @@
+
+.list-categories{
+  @apply flex flex-col sm:flex-row sm:space-x-4
+  space-y-4 sm:space-y-0
+}
+.category-item{
+  @apply flex items-center flex-col
+  justify-center rounded-md border
+  py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50
+  focus:outline-none sm:flex-1 sm:py-6 cursor-pointer
+  bg-white text-gray-900 shadow-sm
+}
+
+.category-item.active-category-item {
+  @apply bg-amber-400
+}

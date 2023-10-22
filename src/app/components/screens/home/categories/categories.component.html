@@ -1,0 +1,13 @@
+
+
+
+
+<div class="list-categories">
+  <label *ngFor="let category of categoryItems" [class]="isActive(category.title) ? 'category-item active-category-item' : 'category-item'" (click)="toggleActive(category.title)">
+    <span id="size-choice-2-label">
+      <mat-icon [fontIcon]="category.icon" class="img-category"></mat-icon>
+    </span>
+    <span>{{category.title}}</span>
+  </label>
+</div>
+
